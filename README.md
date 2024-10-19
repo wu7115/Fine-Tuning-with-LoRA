@@ -16,6 +16,7 @@ Before running the code, ensure that you have the following dependencies install
 Install these packages by running:
 ```bash
 pip install transformers trl accelerate torch bitsandbytes peft datasets -qU
+```
 
 ## Description
 
@@ -72,11 +73,13 @@ The model checkpoints are saved in a directory `mistral-law-stack-exchange`. Eac
    ```python
    from huggingface_hub import login
    login()
+   ```
 
 2. **Training**:
   The code will start training, saving checkpoints every 1,000 steps.
   ```python
    trainer.train('./path_to_checkpoint')
+   ```
 
 ## Notes
 
