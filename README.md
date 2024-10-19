@@ -78,7 +78,7 @@ The model checkpoints are saved in a directory `mistral-law-stack-exchange`. Eac
 2. **Training**:
   The code will start training, saving checkpoints every 1,000 steps.
   ```python
-      trainer.train('./path_to_checkpoint')
+   trainer.train('./path_to_checkpoint')
    ```
 
 ## Notes
